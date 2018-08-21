@@ -1,9 +1,9 @@
 --Constructor
-[X]Receiving nothing
-[X]Receiving x and y
-[X]Receiving r and a
-[X]Receiving x and y as tuple
-[X]Receiving another Point2D
+[T]Receiving nothing
+[T]Receiving x and y
+[T]Receiving r and a
+[T]Receiving x and y as tuple
+[T]Receiving another Point2D
 
 --Getters
 [X]x
@@ -33,8 +33,10 @@
 [X]+=
 [X]-
 [X]-=
-[ ]*= scalar
+[X]*= scalar
 
 --Tests
 
 --Packaging
+
+--Docs
