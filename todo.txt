@@ -10,9 +10,8 @@
 [X]y
 [X]r
 [X]a
-[ ]Get x and y as tuple
-[ ]Get x and y as int
-[ ]Get x and y as tuple of ints
+[X]Get x and y as tuple
+[X]Get x and y as tuple of ints
 [ ]Get r and a as tuple
 
 --Setters
@@ -20,8 +19,8 @@
 [X]y
 [X]r
 [X]a
-[ ]Set x and y
-[ ]Set x and y as tuple
+[X]Set x and y
+[X]Set x and y as tuple
 [ ]Set r and a
 [ ]Set r and a as tuple
 
