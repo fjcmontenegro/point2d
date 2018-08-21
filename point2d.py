@@ -129,13 +129,24 @@ class Point2D:
         self._calc_polar()
         return self
 
+    def __mul__(self, val):
+        return Point2D(r=self.r*val, a=self.a)
+
+    def __rmul__(self, val):
+        return Point2D(r=self.r*val, a=self.a)
+
+    def __imul__(self, val):
+        self.r *= val
+        return self
+
 if __name__ == '__main__':
     p1 = Point2D(1, 0)
     p2 = Point2D(0, 1)
     print(p1+p2)
     print(p2+p1)
     print(p1-p2)
-    p1 -= p2
+    print(2*p1)
+    p1 *= 2
     print(p1)
 
 
