@@ -6,13 +6,13 @@
 [T]Receiving another Point2D
 
 --Getters
-[X]x
-[X]y
-[X]r
-[X]a
-[X]Get x and y as tuple
-[X]Get x and y as tuple of ints
-[X]Get r and a as tuple
+[T]x
+[T]y
+[T]r
+[T]a
+[T]Get x and y as tuple
+[T]Get x and y as tuple of ints
+[T]Get r and a as tuple
 
 --Setters
 [X]x
