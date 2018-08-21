@@ -32,13 +32,23 @@ class Point2D:
             self._r = math.sqrt(x[0]**2 + x[1]**2)
             self._a = math.atan2(x[1], x[0])
 
+    def _calc_cartesian(self):
+        self._x = self._r * math.cos(self._a)
+        self._y = self._r * math.sin(self._a)
+
+    def _calc_polar(self):
+        self._r = math.sqrt(self._x**2 + self._y**2)
+        self._a = math.atan2(self._y, self._x)
+
     @property
     def x(self):
         return self._x
 
     @x.setter
     def x(self, val):
+        print("Setting x as {}".format(val))
         self._x = val
+        self._calc_polar()
     
     @property
     def y(self):
@@ -46,7 +56,9 @@ class Point2D:
 
     @y.setter
     def y(self, val):
+        print("Setting y as {}".format(val))
         self._y = val
+        self._calc_polar()
     
     @property
     def r(self):
@@ -54,7 +66,9 @@ class Point2D:
 
     @r.setter
     def r(self, val):
+        print("Setting r as {}".format(val))
         self._r = val
+        self._calc_cartesian()
     
     @property
     def a(self):
@@ -62,7 +76,9 @@ class Point2D:
 
     @a.setter
     def a(self, val):
+        print("Setting a as {}".format(val))
         self._a = val
+        self._calc_cartesian()
 
     def __repr__(self):
         return "Point2D({}, {})({}, {})".format(self._x,self._y,self._r,self._a)

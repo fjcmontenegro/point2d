@@ -26,8 +26,8 @@
 [ ]Set r and a as tuple
 
 --Recalculate
-[ ]Cartesian from polar
-[ ]Polar from cartesian
+[X]Cartesian from polar
+[X]Polar from cartesian
 
 --Operations
 [ ]+
