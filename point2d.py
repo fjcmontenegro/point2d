@@ -2,12 +2,11 @@ import math
 
 class Point2D:
     def __init__(self, x=None, y=None, r=None, a=None):
-        if not x and not r:
-            self._x = 0.0
-            self._y = 0.0
-            self._r = 0.0
-            self._a = 0.0
-        elif type(x) == Point2D:
+        self._x = 0.0
+        self._y = 0.0
+        self._r = 0.0
+        self._a = 0.0
+        if type(x) == Point2D:
             # copying another point
             self._x = x.x
             self._y = x.y
@@ -19,13 +18,13 @@ class Point2D:
             self._y = x[1]
             self._r = math.sqrt(x[0]**2 + x[1]**2)
             self._a = math.atan2(x[1], x[0])
-        elif x and y:
+        elif not x == None and not y == None:
             # creating from x and y
             self._x = x
             self._y = y
             self._r = math.sqrt(x**2 + y**2)
             self._a = math.atan2(y, x)
-        elif r and a:
+        elif not r == None and not a == None:
             # creating from r and a
             self._r = r
             self._a = a
@@ -112,28 +111,21 @@ class Point2D:
     def __repr__(self):
         return "Point2D({}, {})({}, {})".format(self._x,self._y,self._r,self._a)
 
+    def __add__(self, other):
+        return Point2D(self._x + other.x, self._y + other.y)
+
+    def __iadd__(self, other):
+        self._x += other.x
+        self._y += other.y
+        self._calc_polar()
+        return self
+
 if __name__ == '__main__':
-    p  = Point2D()
-    print(p)
-    p.x = 5
-    print(p)
-    p.y = 5
-    print(p)
-    p.r = 5
-    print(p)
-    p.a = math.pi
-    print(p)
-    p.x, p.y = 1.0, 0.0
-    print(p.cartesian())
-    print(p.ints())
-    p.cartesian((2,2))
-    print(p)
-    p.cartesian(5,2)
-    print(p)
-    print(p.polar())
-    p.polar((2,math.pi))
-    print(p)
-    p.polar(5,math.pi/2)
-    print(p)
+    p1 = Point2D(1, 0)
+    p2 = Point2D(0, 1)
+    print(p1+p2)
+    p1 += p2
+    print(p1)
+
 
 

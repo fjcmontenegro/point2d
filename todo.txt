@@ -29,8 +29,8 @@
 [X]Polar from cartesian
 
 --Operations
-[ ]+
-[ ]+=
+[X]+
+[X]+=
 [ ]-
 [ ]-=
 [ ]*= scalar
