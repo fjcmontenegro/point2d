@@ -33,9 +33,10 @@
 [T]+=
 [T]-
 [T]-=
-[X]*= scalar
+[T]*= scalar
 
 --Tests
+DONE
 
 --Packaging
 
