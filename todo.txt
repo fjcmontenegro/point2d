@@ -1,9 +1,8 @@
 --Constructor
-[ ]Receiving nothing
-[ ]Receiving x and y
-[ ]Receiving r and a
-[ ]Receiving x and y as tuple
-[ ]Receiving r and a as tuple
+[X]Receiving nothing
+[X]Receiving x and y
+[X]Receiving r and a
+[X]Receiving x and y as tuple
 [ ]Receiving another Point2D
 
 --Setters
