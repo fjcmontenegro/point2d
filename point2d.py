@@ -53,6 +53,18 @@ class Point2D:
             self._y = float(y)
             self._calc_polar()
 
+    def polar(self, r=None, a=None):
+        if not r:
+            # act as getter
+            return (self._r, self._a)
+        elif type(r) == tuple:
+            self._r = float(r[0])
+            self._a = float(r[1])
+            self._calc_cartesian()
+        elif r and a:
+            self._r = float(r)
+            self._a = float(a)
+            self._calc_cartesian()
 
     def ints(self):
         return (int(self._x), int(self._y))
@@ -117,6 +129,11 @@ if __name__ == '__main__':
     p.cartesian((2,2))
     print(p)
     p.cartesian(5,2)
+    print(p)
+    print(p.polar())
+    p.polar((2,math.pi))
+    print(p)
+    p.polar(5,math.pi/2)
     print(p)
 
 

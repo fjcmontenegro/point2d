@@ -12,7 +12,7 @@
 [X]a
 [X]Get x and y as tuple
 [X]Get x and y as tuple of ints
-[ ]Get r and a as tuple
+[X]Get r and a as tuple
 
 --Setters
 [X]x
@@ -21,8 +21,8 @@
 [X]a
 [X]Set x and y
 [X]Set x and y as tuple
-[ ]Set r and a
-[ ]Set r and a as tuple
+[X]Set r and a
+[X]Set r and a as tuple
 
 --Recalculate
 [X]Cartesian from polar
@@ -34,3 +34,7 @@
 [ ]-
 [ ]-=
 [ ]*= scalar
+
+--Tests
+
+--Packaging
