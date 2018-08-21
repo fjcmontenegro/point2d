@@ -29,10 +29,10 @@
 [T]Polar from cartesian
 
 --Operations
-[X]+
-[X]+=
-[X]-
-[X]-=
+[T]+
+[T]+=
+[T]-
+[T]-=
 [X]*= scalar
 
 --Tests
