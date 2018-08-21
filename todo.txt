@@ -3,27 +3,31 @@
 [X]Receiving x and y
 [X]Receiving r and a
 [X]Receiving x and y as tuple
-[ ]Receiving another Point2D
+[X]Receiving another Point2D
 
 --Getters
-[ ]x
-[ ]y
-[ ]r
-[ ]a
+[X]x
+[X]y
+[X]r
+[X]a
 [ ]Get x and y as tuple
 [ ]Get x and y as int
 [ ]Get x and y as tuple of ints
 [ ]Get r and a as tuple
 
 --Setters
-[ ]x
-[ ]y
-[ ]r
-[ ]a
+[X]x
+[X]y
+[X]r
+[X]a
 [ ]Set x and y
 [ ]Set x and y as tuple
 [ ]Set r and a
 [ ]Set r and a as tuple
+
+--Recalculate
+[ ]Cartesian from polar
+[ ]Polar from cartesian
 
 --Operations
 [ ]+
