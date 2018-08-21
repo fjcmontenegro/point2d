@@ -120,11 +120,22 @@ class Point2D:
         self._calc_polar()
         return self
 
+    def __sub__(self, other):
+        return Point2D(self._x - other.x, self._y - other.y)
+
+    def __isub__(self, other):
+        self._x -= other.x
+        self._y -= other.y
+        self._calc_polar()
+        return self
+
 if __name__ == '__main__':
     p1 = Point2D(1, 0)
     p2 = Point2D(0, 1)
     print(p1+p2)
-    p1 += p2
+    print(p2+p1)
+    print(p1-p2)
+    p1 -= p2
     print(p1)
 
 

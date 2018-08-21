@@ -31,8 +31,8 @@
 --Operations
 [X]+
 [X]+=
-[ ]-
-[ ]-=
+[X]-
+[X]-=
 [ ]*= scalar
 
 --Tests
