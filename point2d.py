@@ -32,6 +32,23 @@ class Point2D:
             self._x = r * math.cos(a)
             self._y = r * math.sin(a)
 
+    @property
+    def x(self):
+        return self._x
+    
+    @property
+    def y(self):
+        return self._y
+    
+    @property
+    def r(self):
+        return self._r
+    
+    @property
+    def a(self):
+        return self._a
+    
+
 
 
 
@@ -40,5 +57,8 @@ class Point2D:
 
 if __name__ == '__main__':
     p  = Point2D((1,0))
-    p2 = Point2D(p)
     print(p)
+    print(p.x)
+    print(p.y)
+    print(p.r)
+    print(p.a)

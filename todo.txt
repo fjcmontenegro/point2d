@@ -5,16 +5,6 @@
 [X]Receiving x and y as tuple
 [ ]Receiving another Point2D
 
---Setters
-[ ]x
-[ ]y
-[ ]r
-[ ]a
-[ ]Set x and y
-[ ]Set x and y as tuple
-[ ]Set r and a
-[ ]Set r and a as tuple
-
 --Getters
 [ ]x
 [ ]y
@@ -24,6 +14,16 @@
 [ ]Get x and y as int
 [ ]Get x and y as tuple of ints
 [ ]Get r and a as tuple
+
+--Setters
+[ ]x
+[ ]y
+[ ]r
+[ ]a
+[ ]Set x and y
+[ ]Set x and y as tuple
+[ ]Set r and a
+[ ]Set r and a as tuple
 
 --Operations
 [ ]+
