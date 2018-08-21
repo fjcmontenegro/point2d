@@ -74,7 +74,6 @@ class Point2D:
 
     @x.setter
     def x(self, val):
-        print("Setting x as {}".format(val))
         self._x = float(val)
         self._calc_polar()
     
@@ -84,7 +83,6 @@ class Point2D:
 
     @y.setter
     def y(self, val):
-        print("Setting y as {}".format(val))
         self._y = float(val)
         self._calc_polar()
     
@@ -94,7 +92,6 @@ class Point2D:
 
     @r.setter
     def r(self, val):
-        print("Setting r as {}".format(val))
         self._r = float(val)
         self._calc_cartesian()
     
@@ -104,7 +101,6 @@ class Point2D:
 
     @a.setter
     def a(self, val):
-        print("Setting a as {}".format(val))
         self._a = float(val)
         self._calc_cartesian()
 

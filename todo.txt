@@ -10,23 +10,23 @@
 [T]y
 [T]r
 [T]a
-[T]Get x and y as tuple
-[T]Get x and y as tuple of ints
-[T]Get r and a as tuple
+[T]Get cartesian as tuple
+[T]Get cartesian as tuple of ints
+[T]Get polar as tuple
 
 --Setters
-[X]x
-[X]y
-[X]r
-[X]a
-[X]Set x and y
-[X]Set x and y as tuple
-[X]Set r and a
-[X]Set r and a as tuple
+[T]x
+[T]y
+[T]r
+[T]a
+[T]Set cartesian
+[T]Set cartesian as tuple
+[T]Set polar
+[T]Set polar as tuple
 
 --Recalculate
-[X]Cartesian from polar
-[X]Polar from cartesian
+[T]Cartesian from polar
+[T]Polar from cartesian
 
 --Operations
 [X]+
