@@ -135,15 +135,5 @@ class Point2D:
         self.r *= val
         return self
 
-if __name__ == '__main__':
-    p1 = Point2D(1, 0)
-    p2 = Point2D(0, 1)
-    print(p1+p2)
-    print(p2+p1)
-    print(p1-p2)
-    print(2*p1)
-    p1 *= 2
-    print(p1)
-
 
 

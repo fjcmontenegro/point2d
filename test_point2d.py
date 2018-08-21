@@ -169,9 +169,5 @@ class TestPoint2D(unittest.TestCase):
         self.assertEqual(self.p.r, 2.0)
         self.assertEqual(self.p.a, 0.0)
 
-
-
-
-
 if __name__ == '__main__':
     unittest.main()
