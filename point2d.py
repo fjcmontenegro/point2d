@@ -106,7 +106,7 @@ class Point2D:
             self._x = float(x[0])
             self._y = float(x[1])
             self._calc_polar()
-        elif x and y:
+        elif not x == None and not y == None:
             self._x = float(x)
             self._y = float(y)
             self._calc_polar()
@@ -128,7 +128,7 @@ class Point2D:
             self._r = float(r[0])
             self._a = float(r[1])
             self._calc_cartesian()
-        elif r and a:
+        elif not r == None and not a == None:
             self._r = float(r)
             self._a = float(a)
             self._calc_cartesian()
@@ -215,6 +215,5 @@ class Point2D:
         """Scalar multiplication."""
         self.r *= val
         return self
-
 
 
