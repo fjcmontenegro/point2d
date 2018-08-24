@@ -106,6 +106,7 @@ Point2D(-1.0, 0.0)(1.0, 3.141592653589793)
 >>> p.cartesian()
 (-1.0, 0.0)
 ```
+You can also use the method `ints()` to get a tuple of ints with the cartesian coordinates. This is especially useful if you're working with Pygame.
 
 #### Polar Coordinates
 
@@ -114,12 +115,73 @@ The method `polar` does the same thing for polar coordinates. You can set them w
 >>> p = Point2D()
 >>> p.polar(1.0, 0.0)
 >>> p
-Point2D(0.0, 0.0)(0.0, 0.0)
->>> p.polar((-1.0, 0.0))
+Point2D(1.0, 0.0)(1.0, 0.0)
+>>> p.polar((1.0, math.pi))
 >>> p
-Point2D(-1.0, 0.0)(1.0, 3.141592653589793)
+Point2D(-1.0, 1.2246467991473532e-16)(1.0, 3.141592653589793)
 >>> p.polar()
-(-1.0, 0.0)
+(1.0, 3.141592653589793)
+```
+### Useful Tricks
+
+You can work solely with Cartesian coordinates with this class and it's still useful. Here are some useful tricks.
+
+#### Length of a vector
+
+Remember that the radius of a point, in polar coordinates, is its distance to the origin, which is the same as the length of a vector located at the origin.
+
+**i.e.** Use `mypoint.r` to find out its length.
+```python
+>>> p = Point2D(3, 4)
+>>> p.r
+5.0
+```
+
+#### Distance between points
+
+Subtracting two points will give you a third point. The length of this third point is the distance between the two first points. Use its radius to get the length.
+```python
+>>> p1 = Point2D(10, 0)
+>>> p2 = Point2D(10, 10)
+>>> (p2 - p1).r
+10.0
+```
+
+#### Angle between vectors
+
+Again, subtracting two vectors will give you a third. The angle of this third vector is the angle between the two first vectors. Be careful, though, `p1 - p2` is not the same as `p2 - p1`. Although they will yield supplementary angles (their sum is 180°).
+```python
+>>> p1 = Point2D(10, 0)
+>>> p2 = Point2D(10, 10)
+>>> math.degrees((p2 - p1).a)
+90.0
+>>> math.degrees((p1 - p2).a)
+-90.0
+```
+
+#### Scaling vectors
+
+There are two ways to do this. One of them is to multiply the vector by the number that describes its scaling factor. The other way is multiplying its radius by the number.
+```python
+>>> p = Point2D(1,0)
+>>> p *= 3
+>>> p
+Point2D(3.0, 0.0)(3.0, 0.0)
+>>> p = Point2D(1,0)
+>>> p.r *= 3
+>>> p
+Point2D(3.0, 0.0)(3.0, 0.0)
+```
+
+#### Unit vector
+
+The unit vector is a vector of magnitude 1. To find the unit vector of a vector, you need to multiply the vector by its length, which can be kind of annoying. Well, it's easy now. Just set its radius to 1 and it's done. You're welcome.
+
+```python
+>>> p = Point2D(12.34, 56.78)
+>>> p.r = 1
+>>> p
+Point2D(0.21237248410903914, 0.9771887883072318)(1.0, 1.3567941381565736)
 ```
 
 
