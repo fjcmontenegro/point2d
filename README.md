@@ -16,7 +16,7 @@ You can `import point2d` and use the class via `point2d.Point2D` or `from point2
 
 ### Attributes
 
-The `Point2D` class has Cartesian coordinates represented by `x` and `y`, and polar coordinates (radius and angle) represented by (`r` and `a`). If you change the value of `x` or `y`, `r` and `a` will be updated automatically, and vice-versa.
+The `Point2D` class has Cartesian coordinates represented by `x` and `y`, and polar coordinates (radius and angle) represented by `r` and `a`. If you change the value of `x` or `y`, `r` and `a` will be updated automatically, and vice-versa.
 
 ### Creating a Point2D
 
@@ -94,7 +94,7 @@ You can get and set values to the coordinates directly through their names (`x`,
 
 #### Cartesian Coordinates
 
-The method `cartesian` can set Cartesian coordinates or return them. You can set them with `x` and `y` as separate arguments, with a tuple containing `x`and `y`, or use this method to get a tuple containing `x` and `y`.
+The `cartesian()` method can set Cartesian coordinates or return them. You can set them with `x` and `y` as separate arguments, with a tuple containing `x`and `y`, or use this method to get a tuple containing `x` and `y`.
 ```python
 >>> p = Point2D()
 >>> p.cartesian(1.0, 0.0)
@@ -110,7 +110,7 @@ You can also use the method `ints()` to get a tuple of ints with the cartesian c
 
 #### Polar Coordinates
 
-The method `polar` does the same thing for polar coordinates. You can set them with `r` and `a` as separate arguments, with a tuple containing `r`and `a`, or use this method to get a tuple containing `r` and `a`.
+The `polar()` method does the same thing for polar coordinates. You can set them with `r` and `a` as separate arguments, with a tuple containing `r`and `a`, or use this method to get a tuple containing `r` and `a`.
 ```python
 >>> p = Point2D()
 >>> p.polar(1.0, 0.0)
@@ -124,13 +124,13 @@ Point2D(-1.0, 1.2246467991473532e-16)(1.0, 3.141592653589793)
 ```
 ### Useful Tricks
 
-You can work solely with Cartesian coordinates with this class and it's still useful. Here are some useful tricks.
+You can work solely with Cartesian coordinates with this class and it's still useful. Here are some nice "tricks".
 
 #### Length of a vector
 
 Remember that the radius of a point, in polar coordinates, is its distance to the origin, which is the same as the length of a vector located at the origin.
 
-**i.e.** Use `mypoint.r` to find out its length.
+Use `mypoint.r` to find out its length.
 ```python
 >>> p = Point2D(3, 4)
 >>> p.r
@@ -184,9 +184,11 @@ The unit vector is a vector of magnitude 1. To find the unit vector of a vector,
 Point2D(0.21237248410903914, 0.9771887883072318)(1.0, 1.3567941381565736)
 ```
 
+## Links
 
 
+Code: [https://github.com/SplinterDev/point2d/](https://github.com/SplinterDev/point2d/)
 
-URL: https://github.com/SplinterDev/point2d/
+License: [GNU General Public License v3.0](https://github.com/SplinterDev/point2d/blob/master/LICENSE)
 
-Created By: Fabrício J.C. Montenegro (2018)
+Created By: [Fabrício J.C. Montenegro](https://github.com/SplinterDev) (2018)
