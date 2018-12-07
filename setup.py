@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="point2d",
-    version="1.0",
+    version="0.0.1",
     author="Fabricio J.C. Montenegro",
     author_email="fabriciojcmontenegro@gmail.com",
     description="2D point class to represent cartesian and polar coordinates seemlessly.",
