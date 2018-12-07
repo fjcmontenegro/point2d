@@ -1,5 +1,5 @@
 import unittest
-from point2d import Point2D
+from point2d.point2d import Point2D
 import math
 
 class TestPoint2D(unittest.TestCase):
