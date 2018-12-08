@@ -6,7 +6,7 @@ This class describes Cartesian and polar coordinates for 2D points. It simultane
 
 No methods need to be called to recalculate any of the coordinates, this is done automatically, e.g., if you set a new `x`, `r` and `a` will be updated.
 
-## Instalation
+## Installation
 
 From this folder run `python setup.py install`.
 
